@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dohol3u0vbq40"]
+
+[ext_resource type="Texture2D" uid="uid://b7t78pjjmo5p4" path="res://assests/background.png" id="1_jougr"]
+[ext_resource type="Texture2D" uid="uid://cmq1f6aydu002" path="res://assests/slider.png" id="2_cbsqf"]
+[ext_resource type="Texture2D" uid="uid://mcp7r08hu2nt" path="res://assests/ball.png" id="3_wisxt"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(595, 311)
+scale = Vector2(1.97941, 2.04286)
+texture = ExtResource("1_jougr")
+
+[node name="slider 1" type="Sprite2D" parent="."]
+position = Vector2(-140, 328)
+texture = ExtResource("2_cbsqf")
+
+[node name="slider 2" type="Sprite2D" parent="."]
+position = Vector2(1002, 288)
+texture = ExtResource("2_cbsqf")
+
+[node name="ball" type="Sprite2D" parent="."]
+position = Vector2(496, 360)
+texture = ExtResource("3_wisxt")
