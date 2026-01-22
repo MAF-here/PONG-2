@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbrsuuyw2i7ke"]
+
+[ext_resource type="Texture2D" uid="uid://ck3c2c1xrmj2o" path="res://whiteasset.png" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://kcjqjlatlp1f" path="res://paddle.tscn" id="2_fj7yv"]
+[ext_resource type="Script" uid="uid://ivomm7asvriq" path="res://paddle2.gd" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://d0r2on4swys1g" path="res://ball.tscn" id="4_aqk2v"]
+
+[node name="World" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 324.5)
+scale = Vector2(0.74934894, 0.7488426)
+texture = ExtResource("1_f3sb7")
+
+[node name="Paddle_left" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(24, 294)
+scale = Vector2(0.74934894, 0.7488426)
+
+[node name="Paddle_right" parent="." instance=ExtResource("2_fj7yv")]
+position = Vector2(1124, 294)
+scale = Vector2(0.74934894, 0.7488426)
+script = ExtResource("3_tlwt5")
+
+[node name="ball" parent="." instance=ExtResource("4_aqk2v")]
+position = Vector2(570, 295)
