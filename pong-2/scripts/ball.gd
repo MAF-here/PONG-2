@@ -1,9 +1,11 @@
 extends CharacterBody2D
 
-const speed := 4
+const speed := 5.5
+var rng = RandomNumberGenerator.new()
 
 func _ready() -> void:
-	velocity = Vector2(-speed,0)
+	var ball_dir = rng.randf_range(-1.0, 1.0)
+	velocity = Vector2(-speed,ball_dir)
 	
 func _physics_process(delta: float) -> void:
 	var col := move_and_collide(velocity)
